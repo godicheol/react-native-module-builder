@@ -8,24 +8,24 @@ import com.facebook.react.bridge.Promise;
 
 public class MyModule extends ReactContextBaseJavaModule {
 
-    private final ReactApplicationContext reactContext;
+  private final ReactApplicationContext reactContext;
 
-    public MyModule(ReactApplicationContext reactContext) {
-        super(reactContext);
-        this.reactContext = reactContext;
-    }
+  public MyModule(ReactApplicationContext reactContext) {
+    super(reactContext);
+    this.reactContext = reactContext;
+  }
 
-    // To export a module named NativeModules.MyModule.getName
-    @Override
-    public String getName() {
-        return "MyModule";
-    }
+  // To export a module named NativeModules.MyModule.getName
+  @Override
+  public String getName() {
+    return "MyModule";
+  }
 
-    // Example method
-    // See https://reactnative.dev/docs/native-modules-android
-    // To export a module named NativeModules.MyModule.multiply
-    @ReactMethod
-    public void multiply(double a, double b, Promise promise) {
-        promise.resolve(a * b);
-    }
+  // Example method
+  // See https://reactnative.dev/docs/native-modules-android
+  // To export a module named NativeModules.MyModule.multiply
+  @ReactMethod
+  public void multiply(double a, double b, Promise promise) {
+    promise.resolve(a * b);
+  }
 }

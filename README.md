@@ -8,7 +8,7 @@ git clone https://github.com/godicheol/react-native-module-builder.git && cd rea
 // package.json
 ...
 "bundleDependencies": [
-    // add installed library name
+  // add installed library name
 ]
 ...
 ```

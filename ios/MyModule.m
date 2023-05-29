@@ -24,18 +24,18 @@ RCT_EXTERN__BLOCKING_SYNCHRONOUS_METHOD(getName)
 // export callback method
 // NativeModules.MyModule.muliply
 // RCT_EXTERN_METHOD(
-//     multiply:(nonnull NSNumber *)a
-//     b:(nonnull NSNumber *)b
-//     callback:(RCTResponseSenderBlock)callback
+//   multiply:(nonnull NSNumber *)a
+//   b:(nonnull NSNumber *)b
+//   callback:(RCTResponseSenderBlock)callback
 // )
 
 // export promise method
 // NativeModules.MyModule.muliply
 RCT_EXTERN_METHOD(
-    multiply:(nonnull NSNumber *)a
-    b:(nonnull NSNumber *)b
-    resolver:(RCTPromiseResolveBlock)resolve
-    rejecter:(RCTPromiseRejectBlock)reject
+  multiply:(nonnull NSNumber *)a
+  b:(nonnull NSNumber *)b
+  resolver:(RCTPromiseResolveBlock)resolve
+  rejecter:(RCTPromiseRejectBlock)reject
 )
 
 // Rename method
